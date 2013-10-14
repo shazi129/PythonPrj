@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "hackint.h"
+#include <stdio.h>
 
 extern int small_neg_ints;
 extern int small_pos_ints;

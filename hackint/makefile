@@ -4,8 +4,8 @@ CC = gcc
 TARGET = hackint.so
 OBJS = hackint.o
 
-INCLUDE = -I/data/thielzhang/runspace/Python-2.7.5 \
-          -I/data/thielzhang/runspace/Python-2.7.5/Include
+INCLUDE = -I/data/Python-2.7.5 \
+          -I/data/Python-2.7.5/Include
 
 
 all: $(TARGET)
