@@ -36,9 +36,18 @@ PyObject * wrap_printInt(PyObject* self, PyObject* args)
     return  Py_None;
 }
 
+PyObject * wrap_printAddr(PyObject* self, PyObject* args)
+{
+    PyTupleObject * tupleArgs = (PyTupleObject *)args;
+    printf("arg size: %d\n", (int)tupleArgs->ob_size);
+    printf("first args addr: %p\n", *(tupleArgs->ob_item));
+    return Py_None;
+}
+
 static PyMethodDef hackintMethods[] =
 {
     {"printInt", wrap_printInt, METH_VARARGS, "print some infomation"},
+    {"printAddr", wrap_printAddr, METH_VARARGS, "print addr of agrs"},
     {NULL, NULL}
 };
 

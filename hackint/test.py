@@ -3,3 +3,8 @@
 
 import hackint
 hackint.printInt()
+
+a = 2
+hackint.printAddr(a)
+b = 2
+hackint.printAddr(a)
